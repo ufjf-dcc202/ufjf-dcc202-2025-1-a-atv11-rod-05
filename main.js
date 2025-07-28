@@ -20,8 +20,10 @@ atualizarLista();
 function atualizarLista(){
     olItens.innerHTML = "";
     let lista = getLista();
-    for(let i=0; i< lista.length; i++){
+    for(let i=0; i< lista.length; i++)
+        {
         const li = document.createElement('li');
         li.textContent = lista[i];
         olItens.appendChild(li);
+        }
     }
